@@ -67,3 +67,4 @@ C:\Users\Viktor Naydenov\Desktop\Fontys\Fontys\Assignments\Semester 6\Individual
 C:\Users\Viktor Naydenov\Desktop\Fontys\Fontys\Assignments\Semester 6\Individual Project\swagon-microservices\CarService\obj\Debug\net5.0\CarService.pdb
 C:\Users\Viktor Naydenov\Desktop\Fontys\Fontys\Assignments\Semester 6\Individual Project\swagon-microservices\CarService\obj\Debug\net5.0\CarService.genruntimeconfig.cache
 C:\Users\Viktor Naydenov\Desktop\Fontys\Fontys\Assignments\Semester 6\Individual Project\swagon-microservices\CarService\bin\Debug\net5.0\appsettings.Production.json
+C:\Users\Viktor Naydenov\Desktop\Fontys\Fontys\Assignments\Semester 6\Individual Project\swagon-microservices\CarService\bin\Debug\net5.0\RabbitMQ.Client.dll

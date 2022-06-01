@@ -21,6 +21,8 @@ namespace CarService.Data
                 throw new ArgumentNullException(nameof(car));
             }
 
+            System.Console.WriteLine($"Saving car with id: {car.Id} and model {car.Make}");
+
             this.context.Add(car);
             this.context.SaveChanges();
         }
@@ -65,14 +67,19 @@ namespace CarService.Data
             return this.context.Reservations.FirstOrDefault(rn => rn.ReservationNumber == ReservationNumber).Car;
         }
 
-        public bool ReservationExists(string ReservationNumber)
+        public bool CarExists(int carId)
         {
-            return this.context.Reservations.Any(rn => rn.ReservationNumber == ReservationNumber);
+            return this.context.Cars.Any(rn => rn.Id == carId);
         }
 
         public bool SaveChanges()
         {
             return (this.context.SaveChanges() >= 0);
+        }
+
+        public IEnumerable<Reservation> GetReservationsForCar(int carId)
+        {
+            return this.context.Reservations.Where(r => r.Car.Id == carId);
         }
     }
 }

@@ -8,9 +8,14 @@ namespace CarService.Profiles
     {
         public CarsProfile()
         {
+            // Cars
             CreateMap<Car, CarReadDto>();
             CreateMap<CarCreateDto, Car>();
+            CreateMap<CarReadDto, CarPublishedDto>();
+
+            //Reservations
             CreateMap<Reservation, ReservationReadDto>();
+            CreateMap<ReservationCreateDto, Reservation>();
         }
     }
 }

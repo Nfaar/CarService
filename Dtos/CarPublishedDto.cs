@@ -2,8 +2,9 @@ using System;
 
 namespace CarService.Dtos
 {
-    public class CarCreateDto
+    public class CarPublishedDto
     {
+        public int Id { get; set; }
         public string Make { get; set; }
         public string Model { get; set; }
         public string Color { get; set; }
@@ -11,7 +12,8 @@ namespace CarService.Dtos
         public double HourlyPrice { get; set; }
         public DateTime AvailableFrom { get; set; }
         public DateTime AvailableUntil { get; set; }
-
         public string ReservationNumber { get; set; }
+
+        public string Event { get; set; }
     }
 }

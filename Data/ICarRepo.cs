@@ -23,6 +23,8 @@ namespace CarService.Data
         IEnumerable<Reservation> GetAllReservations();
         void CreateReservation(Reservation reservation);
 
-        bool ReservationExists(string ReservationNumber);
+        bool CarExists(int carId);
+
+        IEnumerable<Reservation> GetReservationsForCar(int carId);
     }
 }

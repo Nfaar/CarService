@@ -18,13 +18,13 @@ namespace CarService.Data
                 .Entity<Reservation>()
                 .HasOne(p => p.Car)
                 .WithMany(p => p.Reservation)
-                .HasForeignKey(p => p.ReservationNumber);
+                .HasForeignKey(p => p.Id);
 
             modelBuilder
                 .Entity<Car>()
                 .HasMany(p => p.Reservation)
                 .WithOne(p => p.Car!)
-                .HasForeignKey(p => p.ReservationNumber);
+                .HasForeignKey(p => p.Id);
         }
     }
 }
